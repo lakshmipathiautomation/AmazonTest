@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Application Automation Testing]">
+  <listeners>
+    <listener class-name="amazon.extentReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Multiple Tests on Amazon WebPages(failed)">
+    <classes>
+      <class name="amazon.TestCases.LoginTest">
+        <methods>
+          <include name="LogInTest"/>
+          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+          <include name="amazonLogoImageTest"/>
+        </methods>
+      </class> <!-- amazon.TestCases.LoginTest -->
+      <class name="amazon.TestCases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="AmazonPayPageTest"/>
+          <include name="SearchPageTest"/>
+          <include name="ReturnsAndOrdersTest"/>
+        </methods>
+      </class> <!-- amazon.TestCases.HomePageTest -->
+    </classes>
+  </test> <!-- Multiple Tests on Amazon WebPages(failed) -->
+</suite> <!-- Failed suite [Amazon Application Automation Testing] -->

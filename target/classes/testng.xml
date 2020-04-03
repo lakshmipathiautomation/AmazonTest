@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Application Automation Testing">
+  <test name="Multiple Tests on Amazon WebPages">
+  <listeners>  
+<listener class-name="amazon.extentReport.ExtentReporterNG"/>  
+</listeners>  
+    <classes>
+      <class name="amazon.TestCases.LoginTest"></class>
+      <class name="amazon.TestCases.HomePageTest"></class>
+    
+    </classes>
+  </test> 
+</suite> 
